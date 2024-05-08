@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-public class DtoGato{
+public class DtoElemento{
     private int codigo;
     private String nombre;
     private String modelo;

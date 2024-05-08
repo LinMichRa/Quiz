@@ -7,5 +7,5 @@ import com.linda.quizPrueba.Entidades.Elemento;
 public interface OperacionesElemento {
     public List<Elemento> listarElementos();
     
-    public Gato guardarElementos(Elemento elemento);
+    public Elemento guardarElementos(Elemento elemento);
 }

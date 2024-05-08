@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.linda.quizPrueba.Entidades.Gato;
+import com.linda.quizPrueba.Entidades.Elemento;
 import com.linda.quizPrueba.Operaciones.OperacionesElemento;
 
 @Controller
@@ -18,7 +18,7 @@ public class ControladorElemento {
 
     @GetMapping("/ListarElemento")
     public String listarElemento(Model modelo) {
-        modelo.addAttribute("Elemento", operacionesElemento.listarElementos());
+        modelo.addAttribute("elemento", operacionesElemento.listarElementos());
         return "listaElemento";
     }
     
@@ -31,7 +31,7 @@ public class ControladorElemento {
 
     @PostMapping("/nuevoElemento")
     public String guardarElemento(@ModelAttribute("Elemento")Elemento Elemento) {
-        operacionesElemento.guardarElemento(Elemento);
+        operacionesElemento.guardarElementos(Elemento);
         return "redirect:/ListarGato";
     }
 }

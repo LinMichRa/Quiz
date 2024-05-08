@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name="Gatitos")
-public class Gato {
+public class Elemento {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_ELEMENTO")
     @SequenceGenerator(name="SEQ_ELEMENTO", sequenceName = "SEQ_ELEMENTO", allocationSize = 1)

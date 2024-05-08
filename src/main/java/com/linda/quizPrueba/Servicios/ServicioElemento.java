@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.linda.quizPrueba.Entidades.Gato;
-import com.linda.quizPrueba.Operaciones.OperacionesGato;
-import com.linda.quizPrueba.Repositorios.RepositorioGato;
+import com.linda.quizPrueba.Entidades.Elemento;
+import com.linda.quizPrueba.Operaciones.OperacionesElemento;
+import com.linda.quizPrueba.Repositorios.RepositorioElemento;
 
 @Service
 public class ServicioElemento implements OperacionesElemento{
@@ -21,7 +21,7 @@ public class ServicioElemento implements OperacionesElemento{
     }
 
     @Override
-    public Elemento guardarElemento(Elemento elemento) {
+    public Elemento guardarElementos(Elemento elemento) {
         return repositorioElemento.save(elemento);
     }
     
