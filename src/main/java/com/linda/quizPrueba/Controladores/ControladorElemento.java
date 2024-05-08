@@ -32,6 +32,6 @@ public class ControladorElemento {
     @PostMapping("/nuevoElemento")
     public String guardarElemento(@ModelAttribute("Elemento")Elemento Elemento) {
         operacionesElemento.guardarElementos(Elemento);
-        return "redirect:/ListarGato";
+        return "redirect:/ListarElemento";
     }
 }
